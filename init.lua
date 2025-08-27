@@ -25,6 +25,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
+vim.o.termguicolors = true
+vim.g.tokyonight_style = "storm"
+vim.cmd([[colorscheme tokyonight]])
+
 -- map some telescope keys
 
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Find files" })

@@ -13,5 +13,12 @@ return {
       require("nvim-tree").setup()
     end,
   },
+
+  -- add theme
+  {
+      "folke/tokyonight.nvim",
+      lazy = false,
+      priority = 1000
+  }
 }
 
