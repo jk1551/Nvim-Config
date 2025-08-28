@@ -4,7 +4,7 @@
 
 1. Backup existing nvim config
 
-```bash mv ~/.config/nvim ~/.config/nvim.backup```
+```mv ~/.config/nvim ~/.config/nvim.backup```
 
 2. Clone the repo
 
@@ -12,7 +12,7 @@
 
 3. Open neovim to install plugins
 
-```:PackerInstall```
+```:Lazy sync```
 
 4. Start nvim
 
