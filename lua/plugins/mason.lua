@@ -25,7 +25,11 @@ return {
             })
 
            lspconfig.ts_ls.setup({
-                capabilities = capabilities
+                capabilities = capabilities,
+                on_attach = function(client, bufnr)
+                    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action,
+                        { noremap = true, silent = true, buffer = bufnr })
+                end
             }) 
         end,
     },
