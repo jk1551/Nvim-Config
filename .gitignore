@@ -1,1 +1,29 @@
+# Compiled files and temporary data
+*.luac
+*.nvim-bak
 *.swp
+*.swo
+*.tmp
+*.bak
+*.old
+*.undo
+
+# Session files and history
+Session.vim
+.netrwhist
+.history
+
+# Plugin-specific caches or build directories
+# (Adjust based on your installed plugins)
+pack/*/start/*/build/
+pack/*/start/*/target/
+pack/*/start/*/node_modules/
+pack/*/start/*/dist/
+
+# Lazy.nvim specific caches
+.lazy/
+lazy-lock.json
+
+# Other potential temporary files
+tags
+cscope.*
